@@ -1,0 +1,84 @@
+:root {
+  --bs-primary: #c78c06 !important;
+  --bs-primary-rgb: 199, 140, 6 !important;
+  --bs-secondary: #ffe6ac !important;
+  --bs-secondary-rgb: 255, 230, 172 !important;
+  --bs-dark: #222 !important;
+  --bs-dark-rgb: 34, 34, 34 !important;
+  /* --bs-white: white !important; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link-primary:focus, 
+.link-primary:hover {
+  color: RGBA(var(--bs-primary-rgb), var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.btn {
+  width: fit-content;
+}
+
+header nav ul li a {
+  color: rgba(var(--bs-primary-rgb), 1) !important;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(var(--bs-primary-rgb), 1) !important;
+  color: rgba(var(--bs-dark-rgb), 1) !important;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+#main-banner {
+  background-position: center;
+  background-image: url("../images/main-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-banner .container,
+#main-banner .container-md,
+#main-banner .container-fluid {
+  --bs-bg-opacity: 0.5 !important;
+}
+
+#main-banner small, 
+#main-banner .small {
+  font-size: 0.7em;
+}
+
+#about-us small, 
+#about-us .small {
+  font-size: 0.75em;
+}
+
+#our-vision {
+  background-position: center;
+  background-image: url("../images/vision.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#our-vision #our-vision-learn-more {
+  background-image: linear-gradient(to right, #0f192a, #132a44);
+}
+
+#map {
+  width: 100%;
+  height: 40vh;
+  max-height: 100%;
+}
